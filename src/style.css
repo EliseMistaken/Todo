@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 7fr;
+    grid-template-rows: 1fr 7fr;
+
+    height: 100vh;
+}
+
+header {
+    grid-column:  1 / 3;
+    background-color: tomato;
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    width: 1000px;
+    margin: 10 auto;
+}
+
+.todo {
+    display: flex; 
+    flex-direction: column;   
+}
+
+.title { 
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 80%;
+}
+
+.title>p {
+    flex: 2;
+} 
+
+.check {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.check:active {
+    background-color: gainsboro;
+}
